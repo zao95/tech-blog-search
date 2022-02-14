@@ -1,0 +1,33 @@
+{
+    "name": "tech-blog-search",
+    "version": "1.0.0",
+    "description": "Search word in tech blogs.",
+    "keywords": [
+        "search",
+        "tech",
+        "blog"
+    ],
+    "homepage": "https://github.com/zao95/tech-blog-search#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zao95/tech-blog-search"
+    },
+    "license": "MIT License",
+    "author": {
+        "name": "Lee Jeongwoo",
+        "email": "awmaker@kakao.com",
+        "url": "https://portfolio.awmaker.com"
+    },
+    "main": "index.js",
+    "bin": {
+        "tech-blog-search": "index.js"
+    },
+    "files": [
+        "/index.js",
+        "/db.json"
+    ],
+    "dependencies": {
+        "open": "^8.4.0",
+        "prompts": "^2.4.2"
+    }
+}

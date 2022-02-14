@@ -1,0 +1,110 @@
+{
+    "FaceBook": {
+        "lang": "en",
+        "url": "code.fb.com"
+    },
+    "Microsoft": {
+        "lang": "en",
+        "url": "techcommunity.microsoft.com/t5/custom/page/page-id/Blogs"
+    },
+    "Twitter": {
+        "lang": "en",
+        "url": "blog.twitter.com/engineering/en_us.html"
+    },
+    "Netflix": {
+        "lang": "en",
+        "url": "medium.com/netflix-techblog"
+    },
+    "Amazon": {
+        "lang": "en",
+        "url": "developer.amazon.com/blogs"
+    },
+    "Google": {
+        "lang": "en",
+        "url": "developers.googleblog.com"
+    },
+    "Paypal": {
+        "lang": "en",
+        "url": "www.paypal-engineering.com"
+    },
+    "Airbnb": {
+        "lang": "en",
+        "url": "medium.com/airbnb-engineering"
+    },
+    "DropBox": {
+        "lang": "en",
+        "url": "blogs.dropbox.com/tech"
+    },
+    "Instagram": {
+        "lang": "en",
+        "url": "engineering.instagram.com"
+    },
+    "ebay": {
+        "lang": "en",
+        "url": "www.ebayinc.com/stories/blogs/tech"
+    },
+    "Linked_in": {
+        "lang": "en",
+        "url": "engineering.linkedin.com/blog"
+    },
+    "네이버": {
+        "lang": "kr",
+        "url": "d2.naver.com/home"
+    },
+    "우아한형제들": {
+        "lang": "kr",
+        "url": "woowabros.github.io"
+    },
+    "카카오": {
+        "lang": "kr",
+        "url": "tech.kakao.com"
+    },
+    "카카오_엔터프라이즈": {
+        "lang": "kr",
+        "url": "tech.kakaoenterprise.com"
+    },
+    "라인": {
+        "lang": "kr",
+        "url": "engineering.linecorp.com/ko/blog"
+    },
+    "Spoqa": {
+        "lang": "kr",
+        "url": "spoqa.github.io"
+    },
+    "SK_플래닛": {
+        "lang": "kr",
+        "url": "readme.skplanet.com"
+    },
+    "티켓몬스터": {
+        "lang": "kr",
+        "url": "tmondev.blog.me"
+    },
+    "NHN": {
+        "lang": "kr",
+        "url": "meetup.toast.com"
+    },
+    "쿠팡": {
+        "lang": "kr",
+        "url": "medium.com/coupang-tech"
+    },
+    "레진코믹스": {
+        "lang": "kr",
+        "url": "tech.lezhin.com"
+    },
+    "딜리버리히어로코리아": {
+        "lang": "kr",
+        "url": "medium.com/deliverytechkorea"
+    },
+    "마켓컬리": {
+        "lang": "kr",
+        "url": "helloworld.kurly.com"
+    },
+    "뱅크샐러드": {
+        "lang": "kr",
+        "url": "blog.banksalad.com/tech"
+    },
+    "무신사": {
+        "lang": "kr",
+        "url": "medium.com/musinsa-tech"
+    }
+}
