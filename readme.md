@@ -1,6 +1,6 @@
 # Tech Blog Search
 
-Search word in tech blogs.
+Search for words on the technology blog.
 
 ## 🚀Quick Overview
 
