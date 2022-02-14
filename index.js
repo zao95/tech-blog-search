@@ -16,11 +16,16 @@ const techBlogSearch = async () => {
                 { title: 'Korean', value: 'kr' },
             ],
             hint: '- Space to select. Return to submit',
+            min: 1,
         },
         {
             type: 'text',
             name: 'searchWord',
             message: 'What do you want to search?',
+            validate: (searchWord) =>
+                searchWord.length <= 1
+                    ? 'You must enter at least two letters of search word.'
+                    : true,
         },
     ])
 
