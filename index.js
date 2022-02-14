@@ -24,7 +24,7 @@ const techBlogSearch = async () => {
         },
     ])
 
-    const db = await fs.readFile(path.join(__dirname + 'db.json'), 'utf8')
+    const db = await fs.readFile(path.join(__dirname, 'db.json'), 'utf8')
     const data = JSON.parse(db)
     const toSearch = []
     for (const datum in data) {
