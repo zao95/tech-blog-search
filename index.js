@@ -3,6 +3,7 @@
 const fs = require('fs/promises')
 const open = require('open')
 const prompts = require('prompts')
+const path = require('path')
 
 const techBlogSearch = async () => {
     const response = await prompts([
@@ -23,7 +24,7 @@ const techBlogSearch = async () => {
         },
     ])
 
-    const db = await fs.readFile('./db.json', 'utf8')
+    const db = await fs.readFile(path.join(__dirname + 'db.json'), 'utf8')
     const data = JSON.parse(db)
     const toSearch = []
     for (const datum in data) {
