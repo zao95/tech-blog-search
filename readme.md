@@ -4,6 +4,10 @@ Search word in tech blogs.
 
 ## 🚀Quick Overview
 
+```
+npx tech-blog-search
+```
+
 ## 👏 Contributing
 
 Pull requests and 🌟 stars are always welcome.
