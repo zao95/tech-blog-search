@@ -5,33 +5,45 @@ const open = require('open')
 const prompts = require('prompts')
 
 const techBlogSearch = async () => {
-    const response = (
-        await prompts({
+    const response = await prompts([
+        {
             type: 'multiselect',
-            name: 'value',
+            name: 'languages',
             message: 'Choose the language you want.',
             choices: [
                 { title: 'English', value: 'en' },
                 { title: 'Korean', value: 'kr' },
             ],
             hint: '- Space to select. Return to submit',
-        })
-    ).value
+        },
+        {
+            type: 'text',
+            name: 'searchWord',
+            message: 'What do you want to search?',
+        },
+    ])
 
     const db = await fs.readFile('./db.json', 'utf8')
     const data = JSON.parse(db)
     const toSearch = []
     for (const datum in data) {
-        if (response.includes(data[datum].lang)) {
+        if (response.languages.includes(data[datum].lang)) {
             toSearch.push(data[datum].url)
         }
     }
-    console.log('toSearch', toSearch)
 
     // Maximum query is 2048
-    const searchWork
-    const query = 'react site:d2.naver.com OR site:blogs.dropbox.com/tech/'
-    // open(encodeURI(`https://www.google.com/search?q=${query}`))
+    const searchWord = response.searchWord
+    const query = toSearch.slice(1).reduce((prev, curr) => {
+        const nextValue = prev + ` OR site:${curr}`
+        if (searchWord.length + nextValue.length + 1 >= 2048) {
+            return prev
+        } else {
+            return nextValue
+        }
+    }, `site:${toSearch[0]}`)
+
+    open(encodeURI(`https://www.google.com/search?q=${searchWord} ${query}`))
 }
 
 ;(async () => await techBlogSearch())()
